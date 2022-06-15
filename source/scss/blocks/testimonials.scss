@@ -1,5 +1,5 @@
 .testimonials {
-   background:url(/img/testimonials/bg.png) 0 218px/100% 100% no-repeat;
+   background:url(../img/testimonials/bg.png) 0 218px/100% 100% no-repeat;
 
    .join-box {
       position: relative;
@@ -27,7 +27,7 @@
          width: 406px;
          height: 384px;
 
-         background:url(/img/testimonials/buble-01.svg) center/cover no-repeat;
+         background:url(../img/testimonials/buble-01.svg) center/cover no-repeat;
          transform-origin: left top;
       }
       &::after {
@@ -38,7 +38,7 @@
          width: 442px;
          height: 384px;
 
-         background:url(/img/testimonials/buble-02.svg) center/cover no-repeat;
+         background:url(../img/testimonials/buble-02.svg) center/cover no-repeat;
          transform-origin: right bottom;
       }
 
@@ -141,7 +141,7 @@
          width: calc(50% - 36px);
          height: 100%;
 
-         background:url(/img/testimonials/illustration.jpg) center/cover no-repeat;
+         background:url(../img/testimonials/illustration.jpg) center/cover no-repeat;
          border-radius: 12px;
       }
       & > *:last-child {

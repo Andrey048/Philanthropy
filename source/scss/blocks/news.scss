@@ -66,10 +66,10 @@
       }
 
       &:nth-child(1)::before {
-         background:url(/img/news/01.jpg) left top/cover no-repeat;
+         background:url(../img/news/01.jpg) left top/cover no-repeat;
       }
       &:nth-child(2)::before {
-         background:url(/img/news/02.jpg) center/cover no-repeat;
+         background:url(../img/news/02.jpg) center/cover no-repeat;
       }
       &__card {
          position: relative;

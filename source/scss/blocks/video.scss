@@ -1,5 +1,5 @@
 .video {
-   background: url(/img/video/bg.png) 0 0/100% 50% no-repeat;
+   background: url(../img/video/bg.png) 0 0/100% 50% no-repeat;
 
    &__inner {
       padding: 198px 0 196px-30px;
@@ -50,7 +50,7 @@
       display: block;
       margin-bottom: 80px;
 
-      background-image: url(/img/video/film-icon.png), url(/img/video/film.jpg);
+      background-image: url(../img/video/film-icon.png), url(../img/video/film.jpg);
       background-position: center, center;
       background-size: cover, cover;
       background-repeat: no-repeat, no-repeat;
