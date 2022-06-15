@@ -1,0 +1,229 @@
+.footer {
+   background-color: #FEF9F2;
+
+   &__top-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      margin-top: 163px;
+      padding-bottom: 109px;
+
+      border-bottom: 1px solid #F0ECE8;
+
+      @media (max-width: $max-width-laptop) {
+         margin-top: 90px;
+         padding-bottom: 60px;
+      }
+      @media (max-width: $max-width-mobile) {
+         margin-top: 90px;
+         padding-bottom: 40px;
+      }
+   }
+   &__column-main {
+      flex: 0 0 32.5%;
+
+      padding-right: 30px;
+
+      @media (max-width: $max-width-laptop) {
+         flex: 0 0 55%;
+
+         margin-bottom: 50px;
+         padding-right: 0;
+      }
+      @media (max-width: $max-width-tablet) {
+         flex: 0 0 100%;
+      }
+   }
+   &__columns-links {
+      flex: 0 0 35.5%;
+      display: flex;
+
+
+      padding-top: 11px;
+
+      @media (max-width: $max-width-laptop) {
+         display: none;
+      }
+   }
+   &__column-name {
+      flex: 0 0 40%;
+
+      &__title {
+         margin-bottom: 43px;
+      }
+   }
+   &__column-utility {
+      flex: 0 0 60%;
+   }
+   &__title {
+      margin-bottom: 22px;
+   }
+   &__logo {
+      display: block;
+      width: 239px;
+      height: 38px;
+      margin-bottom: 28px;
+
+      @media (max-width: $max-width-tablet) {
+         width: 179px;
+         height: 33px;
+         margin-bottom: 18px;
+      }
+   }
+   &__subtitle {
+      color: #3F3F3F;
+      line-height: 167%;
+   }
+   &__title {
+      max-width: 60px;
+
+      font-weight: 700;
+      font-size: 20px;
+   }
+   &__list-links {
+      padding-right: 30px;
+
+      li {
+         margin-bottom: 22px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__link {
+      display: block;
+
+      font-size: 17px;
+      line-height: 118%;
+      color: #3F3F3F;
+   }
+   .donate-box {
+      flex: 0 0 32%;
+      position: relative;
+
+      padding: 64px 48px 50px;
+      margin-top: 13px;
+
+      background: #FF9C08;
+      border-radius: 14px;
+
+      *:last-child {
+         margin-bottom: 0;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         z-index: 3;
+
+         width: 260px;
+         height: 171px;
+
+         background:url(/img/footer/buble-01.svg) center/cover no-repeat;
+         opacity: 0.5;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0px;
+         right: 0px;
+         z-index: 1;
+
+         width: 206px;
+         height: 204px;
+
+         background:url(/img/footer/buble-02.svg) center/cover no-repeat;
+         opacity: 0.5;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         flex: 0 0 55%;
+
+         margin-top: 0;
+      }
+      @media (max-width: $max-width-tablet) {
+         flex: 0 0 80%;
+      }
+      @media (max-width: $max-width-mobile) {
+         padding: 38px 20px 28px;
+      }
+
+      &__title {
+         position: relative;
+         z-index: 2;
+
+         font-family: 'Roboto';
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 142%;
+
+         margin-bottom: 21px;
+      }
+      &__btn {
+         position: relative;
+         z-index: 2;
+
+         margin-bottom: 16px;
+         width: 100%;
+
+         @media (max-width: $max-width-mobile) {
+            padding: 0;
+         }
+      }
+      &__btn-not-color {
+         position: relative;
+         z-index: 2;
+
+         width: 100%;
+         padding-right: 5px;
+         @media (max-width: $max-width-mobile) {
+            padding: 0;
+         }
+      }
+   }
+   &__bottom-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 37px 0 28px 0;
+
+      @media (max-width: $max-width-mobile) {
+         padding: 28px 0 21px 0;
+      }
+   }
+   &__copyright {
+      margin-right: 40px;
+
+      line-height: 167%;
+      color: $add-text-color;
+
+      @media (max-width: $max-width-tablet) {
+         margin-right: 0;
+      }
+   }
+   &__copyright-link {
+      color: $main-color;
+   }
+   &__list {
+      display: flex;
+
+      @media (max-width: $max-width-tablet) {
+         display: none;
+      }
+   }
+   &__list-item {
+      width: 36px;
+      height: 36px;
+      margin-right: 12px;
+
+      background-color: $main-color;
+      border-radius: 8px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}

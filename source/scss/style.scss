@@ -1,0 +1,78 @@
+@import "reset.scss";
+@import "fonts.scss";
+
+
+$container-padding: 20px;
+$container-width: 1260px;
+$min-container-width: 320px;
+
+$max-width-laptop: 980px;
+$max-width-tablet: 768px;
+$max-width-mobile: 480px;
+
+$ppi-min-resolution: 1.5dppx;
+
+$main-color: #090909;
+$add-text-color: #6E6E6E;
+$yellow: #FF9C08;
+
+
+._container {
+   max-width: $container-width;
+   min-width: $min-container-width;
+   padding: 0 $container-padding;
+   margin: 0 auto;
+}
+._visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+
+* {
+   font: 18px/111% "Dm Sans", sans-serif;
+   color: $main-color;
+}
+body {
+   display: flex;
+   flex-direction: column;
+
+   .page {
+      flex: 1 1 auto;
+   }
+   &.lock {
+      overflow: hidden;
+   }
+}
+img, svg {
+   width: 100%;
+   height: 100%;
+}
+span {
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   text-align: inherit;
+}
+
+
+@import "ui.scss";
+
+@import "blocks/header.scss";
+@import "blocks/help.scss";
+@import "blocks/about.scss";
+@import "blocks/results.scss";
+@import "blocks/video.scss";
+@import "blocks/assist.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/news.scss";
+@import "blocks/footer.scss";

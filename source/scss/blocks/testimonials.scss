@@ -1,0 +1,237 @@
+.testimonials {
+   background:url(/img/testimonials/bg.png) 0 218px/100% 100% no-repeat;
+
+   .join-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      min-height: 435px;
+      padding: 65px 60px-28px 65px 60px;
+
+      background: #FF9C08;
+      border-radius: 40px;
+
+      &::before,&::after {
+         content: "";
+         position: absolute;
+
+         @media (max-width: $max-width-laptop) {
+            transform: scale(0.75);
+         }
+      }
+      &::before {
+         top: 0;
+         left: 0;
+
+         width: 406px;
+         height: 384px;
+
+         background:url(/img/testimonials/buble-01.svg) center/cover no-repeat;
+         transform-origin: left top;
+      }
+      &::after {
+         bottom: 0;
+         right: 0;
+         z-index: 1;
+
+         width: 442px;
+         height: 384px;
+
+         background:url(/img/testimonials/buble-02.svg) center/cover no-repeat;
+         transform-origin: right bottom;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         min-height: 326px;
+         padding: 65px 60px 65px 60px;
+
+         &::before,&::after {
+            transform: scale(0.75);
+         }
+      }
+      @media (max-width: $max-width-tablet) {
+         flex-direction: column;
+
+         min-height: auto;
+
+         text-align: center;
+      }
+      @media (max-width: $max-width-mobile) {
+         padding: 35px 25px 35px 25px;
+
+         &::before,&::after {
+            transform: scale(0.6);
+         }
+      }
+      &__title, &__btns {
+         flex: 0 0 50%;
+
+         @media (max-width: $max-width-tablet) {
+            flex: 0 0 100%;
+         }
+      }
+      &__title {
+         position: relative;
+         z-index: 2;
+
+         font-family: 'Roboto';
+         font-weight: 700;
+         font-size: 42px;
+         line-height: 138%;
+
+         @media (max-width: $max-width-tablet) {
+            margin-bottom: 35px;
+         }
+      }
+      &__btns {
+         position: relative;
+         z-index: 2;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: flex-end;
+
+         padding-left: 50px;
+
+         @media (max-width: $max-width-tablet) {
+            flex-direction: column;
+
+            padding-left: 0;
+         }
+      }
+      &__btn {
+         margin: 7.5px 28px 7.5px 0;
+
+         &:last-child {
+            margin-right: 0;
+         }
+
+         @media (max-width: $max-width-tablet) {
+            margin-right: 0;
+         }
+      }
+      &__btn--not-color {
+         padding: 0 34px;
+      }
+   }
+   &__main-box {
+      padding: 200px 0 252px;
+
+      @media (max-width: $max-width-laptop) {
+         padding: 150px 0 189px;
+      }
+      @media (max-width: $max-width-mobile) {
+         padding: 120px 0 151px;
+      }
+   }
+   &__text-content {
+      position: relative;
+
+      padding: 102px 15px 50px calc(50% + 72px);
+      min-height: 635px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1;
+
+         width: calc(50% - 36px);
+         height: 100%;
+
+         background:url(/img/testimonials/illustration.jpg) center/cover no-repeat;
+         border-radius: 12px;
+      }
+      & > *:last-child {
+         margin-bottom: 0;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         padding: 76px 11px 37px calc(50% + 54px);
+
+         &::before {
+            width: 50%;
+         }
+      }
+      @media (max-width: $max-width-tablet) {
+         padding: 0;
+         min-height: 0;
+
+         &::before {
+            display: none;
+         }
+      }
+   }
+   &__subtitle {
+      margin-bottom: 18px;
+
+      font-weight: 700;
+   }
+   &__title {
+      margin-bottom: 26px;
+      max-width: 435px;
+   }
+   &__text {
+      margin-bottom: 13px;
+
+      font-size: 17px;
+      line-height: 30px;
+      color: $add-text-color;
+
+      @media (max-width: $max-width-tablet) {
+         margin-bottom: 25px;
+      }
+   }
+   &__points {
+      margin-bottom: 50px;
+   }
+   &__point {
+      margin-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 20px;
+   }
+   .quote {
+      position: absolute;
+      bottom: -52px;
+      left: 19.34%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+
+      width: 31.8%;
+      padding: 68px 41px 66px;
+
+      background: #FFFFFF;
+      border: 1px solid #F0ECE8;
+      box-shadow: 0px 2px 12px rgba(43, 43, 43, 0.06);
+      border-radius: 12px;
+
+      & > *:last-child {
+         margin-bottom: 0;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         display: none;
+      }
+
+      &__text {
+         margin-bottom: 17px;
+
+         line-height: 167%;
+         color: #6E6E6E;
+      }
+      &__author {
+         margin-bottom: 15px;
+
+         font-weight: 700;
+      }
+      &__author-info {
+         font-size: 17px;
+         line-height: 118%;
+         color: #989898;
+      }
+   }
+}

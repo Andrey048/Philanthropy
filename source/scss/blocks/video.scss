@@ -1,0 +1,97 @@
+.video {
+   background: url(/img/video/bg.png) 0 0/100% 50% no-repeat;
+
+   &__inner {
+      padding: 198px 0 196px-30px;
+
+      border-bottom: 1px solid #DAD1CA;
+
+      & > *:last-child {
+         margin-bottom: 0;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         padding: 149px 0 147px-30px;
+      }
+      @media (max-width: $max-width-mobile) {
+         padding: 119px 0 117px;
+      }
+   }
+   &__title-box {
+      max-width: 780px;
+      margin: 0 auto 64px-15px;
+
+      text-align: center;
+
+      & > *:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__subtitle {
+      margin-bottom: 20px;
+
+      font-size: 20px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+   }
+   &__title {
+      margin-bottom: 38px;
+   }
+   &__btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+   &__btn {
+      margin: 0 28px 15px 0;
+   }
+   &__film {
+      display: block;
+      margin-bottom: 80px;
+
+      background-image: url(/img/video/film-icon.png), url(/img/video/film.jpg);
+      background-position: center, center;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+      border-radius: 57px;
+
+      &--16x9 {
+         padding-bottom: 56.39%;
+      }
+
+      @media (max-width: $max-width-laptop) {
+         border-radius: 44px;
+      }
+      @media (max-width: $max-width-tablet) {
+         border-radius: 34px;
+      }
+      @media (max-width: $max-width-mobile) {
+         border-radius: 20px;
+      }
+   }
+   &__text-items {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__text-item {
+      flex: 0 0 46.72%;
+
+      margin-bottom: 30px;
+
+      & > *:last-child {
+         margin-bottom: 0;
+      }
+
+      @media (max-width: $max-width-mobile) {
+         flex: 0 0 100%;
+      }
+   }
+   &__text-item-title {
+      margin-bottom: 11px;
+   }
+   &__text-item-text {
+      line-height: 167%;
+      color: $add-text-color;
+   }
+}
